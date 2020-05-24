@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Message from './Message';
 import Notification from './Notification';
-import Button from './Button';
 import { sendNumber, deleteElement, deleteAll, creerQuestion } from './actions/actions-types';
 
 import './App.css';
