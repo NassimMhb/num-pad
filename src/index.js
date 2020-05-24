@@ -3,10 +3,21 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import 'bootstrap/dist/css/bootstrap.css';
+
+// reducer => contexualiser le store dans l'abre de react
+import calcul from './reducers/calculs';
+
+// création du store
+const store = createStore(calcul);
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store} >
+      <App />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+button {
+  height: 40px;
+  width: 80px;
+  margin: 1px !important;
+}
+
+.btn-danger {
+  height: 78px !important;
+  width: 100px !important;
+}
+
